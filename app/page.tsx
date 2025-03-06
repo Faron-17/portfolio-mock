@@ -3,6 +3,7 @@ import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MyProjects from "@/components/MyProjects";
+import MyTestimonial from "@/components/MyTestimonial";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Experience />
       <AboutMe />
       <MyProjects />
+      <MyTestimonial />
     </div>
   );
 }

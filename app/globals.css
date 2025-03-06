@@ -14,6 +14,10 @@
 
 @theme {
   --color-zinc-300: #71717A;
+  --color-neutral: #404040;
+
+  --shadow-md: 0 6px 8px rgba(24, 39, 75, 0.12); 
+  --shadow-lg: 0 8px 6px rgba(24, 39, 75, 0.08); 
 }
 
 @media (prefers-color-scheme: dark) {

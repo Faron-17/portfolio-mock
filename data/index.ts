@@ -16,3 +16,9 @@ export const myProjects = [
   { title: "Website", text: "testtest", src: "/my-project-02.png" },
   { title: "Tablet app", text: "testtest", src: "/my-project-03.png" },
 ];
+
+export const myTestimonial = [
+  { name: "Evren Shah", text: "I recently had to jump on 10+ different calls across eight different countries to find the right owner.", role: "Designer", src: '/man.svg' },
+  { name: "Flora sheen", text: "I recently had to jump on 10+ different calls across eight different countries to find the right owner.", role: "Designer", src: '/woman.svg' },
+  { name: "Evren Shah", text: "I recently had to jump on 10+ different calls across eight different countries to find the right owner.", role: "Designer", src: '/man.svg' },
+];

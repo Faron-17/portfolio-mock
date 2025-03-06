@@ -3,8 +3,8 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 
 const soraSans = Sora({
-  variable: "--font-sora-sans",
-  subsets: ["latin"],
+  subsets: ['latin'],
+  display: 'swap',
 }) 
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${soraSans.variable} antialiased`}
+        className={`${soraSans.className} antialiased`}
       >
         {children}
       </body>

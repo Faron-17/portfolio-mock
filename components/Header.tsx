@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 function Header() {
   return (
-    <div className='h-[104px] px-28 py-6 flex justify-between'>
+    <header className='h-[104px] px-28 py-6 flex justify-between'>
       <Image
         src='/header-logo.svg'
         alt='header-logo'
@@ -36,7 +36,7 @@ function Header() {
           height={20}
         />
       </button>
-    </div>
+    </header>
   )
 }
 

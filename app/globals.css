@@ -13,7 +13,7 @@
 }
 
 @theme {
-  --color-zinc-300: #71717A
+  --color-zinc-300: #71717A;
 }
 
 @media (prefers-color-scheme: dark) {

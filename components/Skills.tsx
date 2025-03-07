@@ -8,7 +8,7 @@ import { DiJqueryLogo, DiMongodb } from "react-icons/di";
 function Skills() {
   return (
     <section className='px-20 pb-28'>
-      <h1 className='text-center text-5xl'>My <span className='font-bold'>Skills</span></h1>
+      <h1 className='text-center text-5xl'>My <span className='font-extrabold'>Skills</span></h1>
       <div className='pt-16 grid grid-flow-row grid-cols-5 gap-10 px-8'>
         <div className='w-[188px] h-[188px] border-2 border-black rounded-sm flex flex-col justify-center items-center'>
           <Image

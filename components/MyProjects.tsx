@@ -7,7 +7,7 @@ import Link from 'next/link';
 function MyProjects() {
   return (
     <section className='bg-black px-28 py-28'>
-      <h1 className='text-center text-5xl text-white'>My <span className='font-bold'>Projects</span></h1>
+      <h1 className='text-center text-5xl text-white'>My <span className='font-extrabold'>Projects</span></h1>
       <ul className='pt-16'>
         {myProjects.map((item: {title: string, text: string, src: string}, idx: number) => (
           <li key={idx} className={`py-8 px-6 text-white mt-8 flex ${idx%2 !== 0 ? 'flex-row-reverse':''}`}>

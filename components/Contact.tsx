@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactForm'
+import Image from 'next/image'
 
 function Contact() {
   return (
@@ -7,6 +8,32 @@ function Contact() {
       <div className='pr-[108px]'>
         <div className='w-[500px]'>
           <ContactForm />
+          <div className='flex pt-6 gap-4'>
+            <div className='w-14 h-14 bg-black rounded-lg flex justify-center items-center'>
+              <Image
+                src='/facebook.svg'
+                alt='facebook'
+                height={20}
+                width={20}
+              />
+            </div>
+            <div className='w-14 h-14 rounded-lg flex justify-center items-center border-2 border-black'>
+              <Image
+                src='/reddit.svg'
+                alt='reddit'
+                height={20}
+                width={20}
+              />
+            </div>
+            <div className='w-14 h-14 rounded-lg flex justify-center items-center border-2 border-black'>
+              <Image
+                src='/discord.svg'
+                alt='discord'
+                height={20}
+                width={20}
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div>

@@ -136,3 +136,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .bg-my-project-1 {
+    background-image: url('/my-project-01.png');
+    background-repeat: no-repeat;
+  }
+  .bg-my-project-2 {
+    background-image: url('/my-project-02.png');
+    background-repeat: no-repeat;
+  }
+  .bg-my-project-3 {
+    background-image: url('/my-project-03.png');
+    background-repeat: no-repeat;
+  }
+}

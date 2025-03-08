@@ -32,9 +32,9 @@ export const myExperience = [
 ];
 
 export const myProjects = [
-  { title: 'Dev Ops System', text: 'testtest', src: '/my-project-01.png' },
-  { title: 'Website', text: 'testtest', src: '/my-project-02.png' },
-  { title: 'Tablet app', text: 'testtest', src: '/my-project-03.png' },
+  { title: 'Crypto Screener Application', text: "I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book." },
+  { title: 'Euphoria - Ecommerce (Apparels) Website Template', text: "I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book. when an unknown printer took a galley of type and scrambled it to specimen book." },
+  { title: 'Blog Website Template', text: "I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book." },
 ];
 
 export const myTestimonial = [

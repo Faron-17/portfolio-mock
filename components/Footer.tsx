@@ -3,15 +3,15 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='h-[6.25rem] bg-black px-20 py-6'>
-      <div className='px-8 flex justify-between'>
+    <footer className='h-[6.25rem] bg-black px-20 py-6 max-sm:px-4 max-sm:py-2 max-sm:h-20'>
+      <div className='px-8 flex justify-between max-sm:px-0'>
         <Image
           src='/footer-logo.svg'
           alt='footer-logo'
           width={140}
           height={40}
         />
-        <div className='text-white text-base/5 flex flex-col text-right font-semibold tracking-tight'>
+        <div className='text-white text-base/5 flex flex-col text-right font-semibold tracking-tight max-sm:text-xs'>
           <span>@ 2019-2023 Personal</span>
           <span className='pt-3'>Made In Figma</span>
         </div>

@@ -42,7 +42,7 @@
 }
 
 @theme {
-  --color-zinc-300: #71717A;
+  --color-zinc-300: #D4D4DB;
   --color-neutral: #404040;
 
   --shadow-md: 0 6px 8px rgba(24, 39, 75, 0.12); 
@@ -56,6 +56,13 @@
 .py-section {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
+}
+
+@media (width < 40rem) {
+  .py-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 :root {

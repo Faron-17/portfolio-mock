@@ -5,11 +5,11 @@ import Image from 'next/image'
 
 function MyTestimonial() {
   return (
-    <section className='px-20 py-section'>
-      <h1 className='text-5xl/14 text-center py-5'>My <span className='font-extrabold'>Testimonial</span></h1>
-      <ul className='grid grid-flow-row grid-cols-3 gap-10 mt-5 py-10 mx-8 px-6'>
+    <section className='px-20 py-section max-sm:px-4'>
+      <h1 className='text-5xl/14 text-center py-5 max-sm:text-[1.75rem]/8'>My <span className='font-extrabold'>Testimonial</span></h1>
+      <ul className='grid grid-flow-row grid-cols-3 gap-10 mt-5 py-10 mx-8 px-6 max-sm:px-0 max-sm:mx-0 max-sm:flex-col max-sm:grid-cols-1 max-sm:py-0 max-sm:mt-0'>
         {myTestimonial.map((item: {name: string, text: string, role: string, src: string}, idx: number) => (
-          <li key={idx} className={`h-[24.875rem] rounded-2xl shadow-md shadow-lg p-10 flex flex-col items-center ${ idx%2 !== 0 ? 'bg-black text-white' : 'text-neutral'}`}>
+          <li key={idx} className={`h-[24.875rem] rounded-2xl shadow-lg p-10 flex flex-col items-center ${ idx%2 !== 0 ? 'bg-black text-white' : 'text-neutral'}`}>
             <Image
               src={item.src}
               alt={item.src}

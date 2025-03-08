@@ -6,18 +6,15 @@ import Link from 'next/link';
 
 function MyProjects() {
   return (
-    <section className='bg-black px-28 py-28'>
-      <h1 className='text-center text-5xl text-white'>My <span className='font-extrabold'>Projects</span></h1>
-      <ul className='pt-16'>
+    <section className='bg-black px-20 py-section'>
+      <h1 className='text-center text-5xl/14 text-white py-5'>My <span className='font-extrabold'>Projects</span></h1>
+      <ul className='pt-16 mx-8'>
         {myProjects.map((item: {title: string, text: string, src: string}, idx: number) => (
-          <li key={idx} className={`py-8 px-6 text-white mt-8 flex ${idx%2 !== 0 ? 'flex-row-reverse':''}`}>
-            <Image
-              src={item.src}
-              alt={item.src}
-              width={530}
-              height={397}
-            />
-            <div className={`w-[582px] ${idx%2 !== 0 ? 'pt-6':'pt-12'}`}>
+          <li key={idx} className={`h-[32.25rem] text-white flex gap-x-10 ${idx%2 !== 0 ? 'flex-row-reverse' : ''}`}>
+            <div className='w-[37.125rem]'>
+              <div className='w-full h-[24.813rem] bg-[url(/my-project-01.png)] object-cover bg-no-repeat'></div>
+            </div>
+            <div className={`w-[36.375rem] ${idx%2 !== 0 ? 'pt-6':'pt-12'}`}>
               <h1>
                 <span className='flex flex-col'><span className='text-5xl font-bold inline-block'>0{idx+1}</span>
                 <span className='text-3xl font-bold pt-7 inline-block'>{item.title}</span></span>

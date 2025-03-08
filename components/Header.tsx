@@ -1,4 +1,7 @@
+'use client'
+
 import React from 'react'
+import { useState } from 'react';
 
 import { navItems } from '@/data';
 import Link from 'next/link';
@@ -6,8 +9,10 @@ import Image from 'next/image';
 
 
 function Header() {
+  const [isActive, setIsActive] = useState('')
+
   return (
-    <header className='h-[104px] px-28 py-6 flex justify-between'>
+    <header className='h-[6.5rem] mx-20 px-8 py-6 flex justify-between'>
       <Image
         src='/header-logo.svg'
         alt='header-logo'
@@ -19,14 +24,15 @@ function Header() {
           <Link
             key={`link=${idx}`}
             href={navItem.link}
-            className='w-fit flex items-center'
+            className={`w-fit flex items-center h-fit my-4 border-2 ${isActive === navItem.link ? 'active border-black' : 'border-white'}`}
+            onClick={() => setIsActive(navItem.link)}
           >
-            <span className='text-xl font-semibold leading-[24px]'>{navItem.name}</span>
+            <span className='text-xl font-semibold leading-6 tracking-tight'>{navItem.name}</span>
           </Link>
         ))}
       </ul>
-      <button className='bg-black h-14 w-[153px] flex justify-center items-center gap-2 rounded-lg'>
-        <span className='text-white text-xl font-semibold leading-[24px]'>
+      <button className='bg-black h-14 px-5 flex justify-center items-center gap-2 rounded-sm'>
+        <span className='text-white text-xl font-semibold leading-6 tracking-wide'>
           Resume
         </span>
         <Image

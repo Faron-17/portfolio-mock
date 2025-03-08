@@ -2,10 +2,10 @@ import React from 'react'
 
 import { myExperience } from '@/data';
 
-function Experience() {
+function MyExperience() {
   return (
-    <section className='bg-black px-28 py-28'>
-      <h1 className='text-center text-5xl text-white'>My <span className='font-extrabold'>Experience</span></h1>
+    <section className='bg-black px-28 py-section'>
+      <h1 className='text-center text-5xl text-white py-5'>My <span className='font-extrabold'>Experience</span></h1>
       <ul className='pt-16'>
         {myExperience.map((item: {title: string, duration: string, text: string}, idx: number) => (
           <li key={idx} className={`border-zinc-300 rounded-xl border-2 py-8 px-6 text-white mt-8 ${idx%2 === 1 ? 'bg-zinc-300' : ''}`}>
@@ -21,4 +21,4 @@ function Experience() {
   )
 }
 
-export default Experience
+export default MyExperience

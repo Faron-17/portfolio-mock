@@ -26,9 +26,9 @@ export const mySkills = [
 ]
 
 export const myExperience = [
-  { title: 'System Integrator at AS', duration: '2024.4-2025.5', text: 'testtest' },
-  { title: 'Frontend Developer at NB', duration: '2019.10-2023.12', text: 'testtest' },
-  { title: 'Software Engineer at Ar', duration: '2018.4-2019.9', text: 'testtest' },
+  { src: '/google.svg', alt: 'google', title: 'Lead Software Engineer at Google', duration: 'Nov 2019 - Present', text: "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide." },
+  { src: '/youtube.svg', alt: 'youtube', title: 'Software Engineer at Youtube', duration: 'Jan 2017 - Oct 2019', text: "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability." },
+  { src: '/apple.svg', alt: 'apple',title: 'Junior Software Engineer at Apple', duration: 'Jan 2016 - Dec 2017', text: "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team." },
 ];
 
 export const myProjects = [

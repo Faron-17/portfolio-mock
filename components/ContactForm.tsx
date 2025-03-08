@@ -47,7 +47,7 @@ function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 max-w-3xl mx-auto'>
+      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 max-w-3xl mx-auto pt-[4.75rem]'>
         <FormField
           control={form.control}
           name='name_1700633841'
@@ -55,8 +55,9 @@ function ContactForm() {
             <FormItem className='mb-5'>
               <FormControl>
                 <Input
-                placeholder='Your name'
+                placeholder='Email'
                 type='email'
+                className='h-14 px-6 py-[1.125rem] border-2 border-black'
                 {...field} />
               </FormControl>
               <FormMessage />
@@ -72,6 +73,7 @@ function ContactForm() {
                 <Input 
                 placeholder='Your website(if exists)'
                 type='text'
+                className='h-14 px-6 py-[1.125rem] border-2 border-black'
                 {...field} />
               </FormControl>
               
@@ -87,7 +89,7 @@ function ContactForm() {
               <FormControl>
                 <Textarea
                   placeholder='How can I help?'
-                  className='resize-none h-36'
+                  className='resize-none h-[8.75rem] px-6 py-[1.125rem] border-2 border-black'
                   {...field}
                 />
               </FormControl>
@@ -95,7 +97,7 @@ function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type='submit' className='cursor-pointer bg-black text-white font-semibold text-xl h-14 py-5'>Get In Touch</Button>
+        <Button type='submit' className='cursor-pointer bg-black text-white font-semibold text-xl h-14 py-5 w-[10.813rem]'>Get In Touch</Button>
       </form>
     </Form>
   )

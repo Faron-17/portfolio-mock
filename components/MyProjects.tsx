@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function MyProjects() {
   return (
-    <section className='bg-black px-20 py-section max-lg:px-4'>
+    <section id='my-projects' className='bg-black px-20 py-section max-lg:px-4'>
       <h1 className='text-center text-5xl/14 text-white py-5 max-sm:text-[1.75rem]/8'>My <span className='font-extrabold'>Projects</span></h1>
       <ul className='pt-5 mx-8 flex flex-col gap-5 max-sm:mx-0 max-sm:gap-7'>
         {myProjects.map((item: {title: string, text: string}, idx: number) => (

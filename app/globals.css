@@ -46,7 +46,7 @@
   --color-neutral: #404040;
 
   --shadow-md: 0 6px 8px rgba(24, 39, 75, 0.12); 
-  --shadow-lg: 0 8px 6px rgba(24, 39, 75, 0.08);
+  --shadow-lg: 0 8px 16px rgba(24, 39, 75, 0.08);
 }
 
 .text-stroke {
@@ -148,13 +148,16 @@
   .bg-my-project-1 {
     background-image: url('/my-project-01.png');
     background-repeat: no-repeat;
+    background-position: center;
   }
   .bg-my-project-2 {
     background-image: url('/my-project-02.png');
     background-repeat: no-repeat;
+    background-position: center;
   }
   .bg-my-project-3 {
     background-image: url('/my-project-03.png');
     background-repeat: no-repeat;
+    background-position: center;
   }
 }

@@ -21,6 +21,7 @@ import { Button } from './ui/button'
 
 
 const formSchema = z.object({
+  name_4056175665: z.string().min(1).optional(),
   name_1700633841: z.string().optional(),
   name_3315437931: z.string().min(1).optional(),
   name_4822736564: z.string().optional()
@@ -47,7 +48,23 @@ function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 max-w-3xl mx-auto pt-[4.75rem]'>
+      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 max-w-3xl mx-auto max-sm:pt-5'>
+      <FormField
+          control={form.control}
+          name='name_4056175665'
+          render={({ field }) => (
+            <FormItem className='mb-5'>
+              <FormControl>
+                <Input 
+                placeholder='Your name'
+                type='text'
+                className='h-14 px-6 py-[1.125rem] border-[0.088rem] border-black'
+                {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name='name_1700633841'
@@ -57,7 +74,7 @@ function ContactForm() {
                 <Input
                 placeholder='Email'
                 type='email'
-                className='h-14 px-6 py-[1.125rem] border-2 border-black'
+                className='h-14 px-6 py-[1.125rem] border-[0.088rem] border-black'
                 {...field} />
               </FormControl>
               <FormMessage />
@@ -73,7 +90,7 @@ function ContactForm() {
                 <Input 
                 placeholder='Your website(if exists)'
                 type='text'
-                className='h-14 px-6 py-[1.125rem] border-2 border-black'
+                className='h-14 px-6 py-[1.125rem] border-[0.088rem] border-black'
                 {...field} />
               </FormControl>
               
@@ -89,7 +106,7 @@ function ContactForm() {
               <FormControl>
                 <Textarea
                   placeholder='How can I help?'
-                  className='resize-none h-[8.75rem] px-6 py-[1.125rem] border-2 border-black'
+                  className='resize-none h-[8.75rem] px-6 py-[1.125rem] border-[0.088rem] border-black max-sm:py-3'
                   {...field}
                 />
               </FormControl>
@@ -97,7 +114,7 @@ function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type='submit' className='cursor-pointer bg-black text-white font-semibold text-xl h-14 py-5 w-[10.813rem]'>Get In Touch</Button>
+        <Button type='submit' className='cursor-pointer bg-black text-white font-semibold text-xl h-14 py-5 w-[10.813rem] max-sm:w-[8.688rem] max-sm:h-12 max-sm:text-base/5'>Get In Touch</Button>
       </form>
     </Form>
   )

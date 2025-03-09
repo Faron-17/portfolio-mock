@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+This website design is based on [Illustration Based Portfolio Website Template](https://www.figma.com/community/file/1318529372146880502)
+
 ## Getting Started
 
 First, run the development server:

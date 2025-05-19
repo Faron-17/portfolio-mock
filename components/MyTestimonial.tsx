@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 function MyTestimonial() {
   return (
-    <section className='px-20 py-section max-xl:px-4'>
+    <section className='px-20 py-section max-xl:px-4 max-w-[1280px]'>
       <h1 className='text-5xl/14 text-center py-5 max-sm:text-[1.75rem]/8'>My <span className='font-extrabold'>Testimonial</span></h1>
       <ul className='grid grid-flow-row grid-cols-3 gap-10 mt-5 py-10 mx-8 px-6 max-lg:px-5 max-sm:mx-0 max-sm:flex-col max-lg:grid-cols-1 max-sm:py-5 max-sm:mt-0'>
         {myTestimonial.map((item: {name: string, text: string, role: string, src: string}, idx: number) => (

@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${soraSans.className} antialiased`}
+        className={`${soraSans.className} antialiased flex justify-center`}
       >
         {children}
       </body>

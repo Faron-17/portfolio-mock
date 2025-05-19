@@ -3,7 +3,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <section id='about-me' className='mx-20 px-8 py-section flex items-center mb-1 max-lg:flex-col max-sm:px-4 max-sm:mx-0 max-sm:mb-0'>
+    <section id='about-me' className='mx-20 px-8 py-section flex items-center mb-1 max-lg:flex-col max-sm:px-4 max-sm:mx-0 max-sm:mb-0 max-w-[1280px]'>
       <Image
         src='/about-me.svg'
         alt='about-me'

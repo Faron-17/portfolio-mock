@@ -12,7 +12,7 @@ function Header() {
   const [isActive, setIsActive] = useState('')
 
   return (
-    <header className='h-[6.5rem] mx-20 px-8 py-6 flex justify-between max-sm:px-4 max-sm:mx-0 max-sm:py-4 max-sm:h-[4.5rem] max-lg:mx-0'>
+    <header className='h-[6.5rem] mx-20 px-8 py-6 flex justify-between max-sm:px-4 max-sm:mx-0 max-sm:py-4 max-sm:h-[4.5rem] max-lg:mx-0 max-w-[1280px] w-full'>
       <Image
         src='/header-logo.svg'
         alt='header-logo'

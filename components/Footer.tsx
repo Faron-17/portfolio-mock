@@ -3,8 +3,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='h-[6.25rem] bg-black px-20 py-6 max-sm:px-4 max-sm:py-5 max-sm:h-20'>
-      <div className='px-8 flex justify-between max-sm:px-0'>
+    <footer className='h-[6.25rem] bg-black px-20 py-6 max-sm:px-4 max-sm:py-5 max-sm:h-20 w-full flex justify-center'>
+      <div className='px-8 flex justify-between max-sm:px-0 max-w-[1280px] w-full'>
         <Image
           src='/footer-logo.svg'
           alt='footer-logo'

@@ -5,7 +5,7 @@ import { sns } from '@/data'
 
 function Hero() {
   return (
-    <section className='px-20 py-section max-lg:px-4'>
+    <section className='px-20 py-section max-lg:px-4 max-w-[1280px] w-full'>
       <div className='px-8 flex max-lg:flex-col-reverse max-xl:px-0'>
         <div className='pt-[7.938rem] max-sm:pt-12 max-sm:pb-[1.875rem]'>
           <div className='pt-5 tracking-tight text-5xl/14 max-sm:pt-0 max-sm:text-[1.75rem]/8 max-sm:tracking-normal'>

@@ -10,7 +10,7 @@ import MySkills from "@/components/MySkills";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center w-full">
       <Header />
       <Hero />
       <MySkills />
